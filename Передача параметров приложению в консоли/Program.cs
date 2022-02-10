@@ -6,7 +6,9 @@ namespace Передача_параметров_приложению_в_конс
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Как вас зовут?");
+            string imya = Console.ReadLine();
+            Console.WriteLine($"Привет {imya}");
         }
     }
 }
