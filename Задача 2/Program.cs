@@ -9,7 +9,7 @@ namespace Задача_2
             Console.WriteLine(args.Length);
             int a = Convert.ToInt32(args[0]);
             int b = Convert.ToInt32(args[1]);
-            Console.WriteLine(a+b);
+            Console.WriteLine(a + b);
         }
     }
 }
