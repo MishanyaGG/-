@@ -26,7 +26,7 @@ namespace Определить_в_каком_числе_больше_цифр
             else
             {
                 if (n<k)
-                    Console.WriteLine($"В числе {new_b} больше цифр, чем в {new_b}. Количество цифр {new_a} = {n}, {new_b} = {k}");
+                    Console.WriteLine($"В числе {new_b} больше цифр, чем в {new_a}. Количество цифр {new_a} = {n}, {new_b} = {k}");
                 else
                     Console.WriteLine($"В числах {new_a} и {new_b} одинаковое количество цифр");
             }
