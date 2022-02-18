@@ -61,11 +61,11 @@ namespace Задание_3._1_глава_3 //Машина
                 for (int x = 0; x < i; x++) //Добавление машин
                 {
                     por_nom++;
-                    Console.Write("Введите марку машины");
+                    Console.WriteLine("Введите марку машины");
                     string marka = Console.ReadLine();
-                    Console.Write("Введите номер машины");
+                    Console.WriteLine("Введите номер машины");
                     int nomer = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Введите модель машины");
+                    Console.WriteLine("Введите модель машины");
                     string model = Console.ReadLine();
                     car.Add(new Car(marka, nomer, model));
                     Console.WriteLine($"{por_nom}. {marka} {model} {nomer}");  
