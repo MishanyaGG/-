@@ -16,8 +16,9 @@ namespace Реализация_задачи_Company
         /// <summary>
         /// Месячный фонд зарплаты
         /// </summary>
+        //public int money;
         //---------Описание методов--------
-        public int money;
+        
 
         public Company (string name, int persons, int money)
         {
@@ -131,14 +132,14 @@ namespace Реализация_задачи_Company
                 //(сдвиг вправо)
                 comp1.Insert(nomer-1, new Company(Console.ReadLine(), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine())));
             }*/
-            /*метод RemoveAt удаляет элемент по индексу
-            comp1.RemoveAt(0);
-            Console.WriteLine("*****************************");
-            Console.WriteLine("Преобразованная коллекция");
-            foreach (Company z in comp1)
-                z.show();
-        }
-    }*/
+    /*метод RemoveAt удаляет элемент по индексу
+    comp1.RemoveAt(0);
+    Console.WriteLine("*****************************");
+    Console.WriteLine("Преобразованная коллекция");
+    foreach (Company z in comp1)
+        z.show();
+}
+}*/
     /*реализация свойств
      */
     /*class Company

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Определить в к�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Массив,нахождение экстремума,и отсортированть", "Массив,нахождение экстремума,и отсортированть\Массив,нахождение экстремума,и отсортированть.csproj", "{14228EE9-B0D8-40B5-84CD-931208B9DFAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Реализация задачи Company", "Реализация задачи Company\Реализация задачи Company.csproj", "{228093AB-8F44-4802-A678-FC3FD0DDD1F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Реализация задачи Company", "Реализация задачи Company\Реализация задачи Company.csproj", "{228093AB-8F44-4802-A678-FC3FD0DDD1F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 3.1 глава 3", "Задание 3.1 глава 3\Задание 3.1 глава 3.csproj", "{BEBF2A35-5B81-4C4A-A350-A6AB2B85B254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{228093AB-8F44-4802-A678-FC3FD0DDD1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{228093AB-8F44-4802-A678-FC3FD0DDD1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{228093AB-8F44-4802-A678-FC3FD0DDD1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBF2A35-5B81-4C4A-A350-A6AB2B85B254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBF2A35-5B81-4C4A-A350-A6AB2B85B254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBF2A35-5B81-4C4A-A350-A6AB2B85B254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBF2A35-5B81-4C4A-A350-A6AB2B85B254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
