@@ -123,9 +123,9 @@ namespace Реализация_задачи_Company
             int remove = int.Parse(Console.ReadLine());
             if (remove == 1)
             {
-                Console.WriteLine("Какую компанию вы хотите изменить? номер компании");
+                Console.WriteLine("Какую компанию вы хотите изменить? Введите номер компании");
                 nomer = int.Parse(Console.ReadLine());
-                //метод Remove удаляет элеент по ссылке
+                //метод Remove удаляет элемент по ссылке
                 comp1.Remove(comp1[nomer-1]);
                 Console.WriteLine("Введите новые данные. \n 1) Название компании\n 2) Количество сотрудников\n 3)Месячный фонд компании");
                 //вставка объекта по указанному индексу
