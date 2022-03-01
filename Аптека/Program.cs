@@ -9,32 +9,31 @@ namespace Аптека
         {
             List<Apteka> apteka = new List<Apteka>();
             Console.WriteLine("Введите название аптеки");
-            string name_apt = Console.ReadLine();
+            string name_apt1 = Console.ReadLine();
+            
             Console.WriteLine("Введите количество лекарств");
             int col = Convert.ToInt32(Console.ReadLine());
-            double max = double.MinValue;
-            string name_max;
             double summ = 0;
-            for (int x = 0; x < col; x++)
-            {
-                Console.WriteLine($"Введите {x + 1} лекарство");
-                string name_lek = Console.ReadLine();
-                Console.WriteLine($"Введите его цену");
-                double stoimost = double.Parse(Console.ReadLine());
-                apteka.Add(new Apteka(name_apt, name_lek, stoimost));
-                if (max < stoimost)
-                {
-                    max = stoimost;
-                    name_max = name_lek;
-                    Console.WriteLine($"На данный момент максимальная стоимость: \nЛекарство {name_max} стоимость {max}");
-                }
-                summ = summ + stoimost;
-            }
+            Console.WriteLine($"Введите название  лекарство");
+            string name_lek = Console.ReadLine();
+            Console.WriteLine("Введите цену лекарства");
+            int stoimost = int.Parse(Console.ReadLine());
+            Apteka name_apt = new Apteka(name_apt1, name_lek, stoimost);
+            //for (int x = 0; x < col; x++)
+            //{
+            //    Create_lec(name_apt, name_lek, stoimost);
+
+            //}
             Console.WriteLine($"Общая стоимость лекарств {summ}");
             Console.WriteLine("**********************************");
-            Console.WriteLine($"Аптека {name_apt}");
-            foreach (Apteka z in apteka)
-                z.info();
+            name_apt.Info();
+            Console.ReadKey();
+        }
+
+        private static void Create_lec(Apteka apteka, string _lec_name, int x)
+        {
+            
+            apteka.Add_Lek(_lec_name, x);
         }
     }
 }
