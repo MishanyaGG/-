@@ -9,7 +9,7 @@ namespace Аптека
     class Apteka
     {
         private string name_apt;
-        public SortedList<string, int> name_lek;
+        public SortedList<string, int> name_lek = new SortedList<string, int>();
 
         public Apteka(string name_apt)
         {
@@ -19,7 +19,7 @@ namespace Аптека
         {
 
         }
-        public void Add_Lek(string _name_lek, int price = 0)
+        public void Add_Lek(string _name_lek, int price)
         {
             name_lek.Add(_name_lek, price);
         }
@@ -28,7 +28,7 @@ namespace Аптека
         public void Info()
         {
             Console.WriteLine($"Список лекарств аптеки {this.name_apt}: ");
-            Console.WriteLine(this.name_lek);
+            Console.WriteLine(name_lek.);
         }
 
         /*public void MaxPrice(string name_apt,  List<Apteka> apteka)
