@@ -6,25 +6,16 @@ namespace AptekaClass
 {
     public class Apteka
     {
-        public string name_apt;
-        public string name_lec;
-        public float stoimost;
 
-        public Apteka(string name_apt, string name_lec, float stomiost)
+        public void Info(string Name_lec, int Stoimost)
         {
-            name_apt = this.name_apt;
-            name_lec = this.name_lec;
-            stomiost= this.stoimost;
+            //Console.WriteLine($"Название аптеки {Name_apt}");
+            Console.WriteLine($"Название лекарства {Name_lec}. Стоимость лекарства {Stoimost}");
         }
-
-        public void Info()
+        public int All_Price (int price, int all_price)
         {
-            Console.WriteLine($"Название аптеки {name_apt}");
-            Console.Write($"Название лекарства {name_lec}. Стоимость лекарства {stoimost}");
-        }
-        public void MaxPrice()
-        {
-
+            return price + all_price;
         }
     }
+    
 }
