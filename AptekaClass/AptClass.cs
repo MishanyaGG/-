@@ -16,6 +16,17 @@ namespace AptekaClass
         {
             return price + all_price;
         }
+        public int max (int stoimost, int max, int x)
+        {
+            max = int.MinValue;
+            int max_index = 0; 
+            if (stoimost > max)
+            {
+                max_index = x;
+                max = stoimost;
+            }
+            return max;
+        }
     }
     
 }

@@ -17,7 +17,7 @@ namespace Апетка
             int n = Convert.ToInt32(Console.ReadLine());
             string[] name = new string[n];
             int[] stoimost = new int[n];
-            int max = int.MinValue;
+            int max = 0;
             int max_index = 0;
             for (int x = 0; x<n; x++)
             {
@@ -25,11 +25,7 @@ namespace Апетка
                 name[x] = Console.ReadLine();
                 Console.WriteLine($"Введите цену {name[x]}");
                 stoimost[x] = Convert.ToInt32(Console.ReadLine());
-                if (stoimost[x] > max)
-                {
-                    max_index = x;
-                    max = stoimost[x];
-                }
+                max = apt.max(stoimost[x], max, x);
             }
             Console.WriteLine($"Самое дорогое лекарство {name[max_index]} - {max}");
             Console.WriteLine($"Название аптеки {name_apt}");
